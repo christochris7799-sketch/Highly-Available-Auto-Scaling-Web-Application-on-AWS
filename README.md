@@ -58,4 +58,4 @@ Multi-AZ distributed deployment, Auto scaling based on CPU load, Self-healing in
 
 Add RDS Multi-AZ backend, Implement CI/CD using CodePipeline, Deploy with Terraform or CloudFormation, Add CloudFront CDN, Add AWS WAF security layer
 
-Christopher
+🧑‍💻 Christopher
