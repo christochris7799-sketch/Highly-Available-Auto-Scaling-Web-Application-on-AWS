@@ -3,7 +3,7 @@
 This project demonstrates how to deploy a **highly available**, **fault-tolerant**, and **auto-scaling** web application using AWS.  
 The infrastructure uses **Application Load Balancer (ALB)**, **Auto Scaling Group (ASG)**, and **Multi-AZ deployment** to ensure continuous availability even during failures or high traffic.
 
-## 🎯 Project Goals
+ 🎯 Project Goals
 - Build a **zero-downtime**, **self-healing** architecture  
 - Deploy across **multiple Availability Zones (Multi-AZ)**  
 - Automatically scale the number of servers based on demand  
@@ -11,7 +11,7 @@ The infrastructure uses **Application Load Balancer (ALB)**, **Auto Scaling Grou
 - Replace unhealthy servers automatically  
 - Demonstrate production-ready AWS deployment
 
-- ✅ Services Used
+✅ Services Used
 
 - Amazon EC2
 - Launch Template
@@ -25,7 +25,30 @@ The infrastructure uses **Application Load Balancer (ALB)**, **Auto Scaling Grou
 - Route 53
 - S3 Bucket
 
-## 🧱 Architecture Overview
+🧱 Architecture Overview
+
+                  ┌─────────────────────────────┐
+                  │     Users / Clients          │
+                  └─────────────────────────────┘
+                               │
+                               ▼
+                 ┌──────────────────────────────┐
+                 │ Application Load Balancer     │
+                 └──────────────────────────────┘
+                         │                 │
+               ┌─────────┘                 └─────────┐
+               ▼                                       ▼
+    ┌───────────────────┐                  ┌────────────────────┐
+    │ Auto Scaling Group│                  │ Auto Scaling Group │
+    │  Instance #1      │                  │  Instance #2       │
+    └───────────────────┘                  └────────────────────┘
+               │                                       │
+               └────────────────────────┬──────────────┘
+                                        ▼
+                        ┌──────────────────────────┐
+                        │ Multi-AZ (2 Availability │
+                        │       Zones Active)      │
+                        └──────────────────────────┘
 
 ⭐ Key Features
 Multi-AZ distributed deployment
