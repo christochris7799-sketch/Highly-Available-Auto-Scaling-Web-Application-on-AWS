@@ -52,18 +52,8 @@ The infrastructure uses **Application Load Balancer (ALB)**, **Auto Scaling Grou
 
 ⭐ Key Features
 
-Multi-AZ distributed deployment
-Auto scaling based on CPU load
-Self-healing infrastructure
-Fault tolerant
-Highly available
-Zero downtime
-Fully production-ready design
+Multi-AZ distributed deployment, Auto scaling based on CPU load, Self-healing infrastructure, Fault tolerant, Highly available, Zero downtime, Fully production-ready design
 
 📈 Future Enhancements
 
-Add RDS Multi-AZ backend
-Implement CI/CD using CodePipeline
-Deploy with Terraform or CloudFormation
-Add CloudFront CDN
-Add AWS WAF security layer
+Add RDS Multi-AZ backend, Implement CI/CD using CodePipeline, Deploy with Terraform or CloudFormation, Add CloudFront CDN, Add AWS WAF security layer
