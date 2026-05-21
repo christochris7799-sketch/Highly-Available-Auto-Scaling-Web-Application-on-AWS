@@ -51,6 +51,7 @@ The infrastructure uses **Application Load Balancer (ALB)**, **Auto Scaling Grou
                         └──────────────────────────┘
 
 ⭐ Key Features
+
 Multi-AZ distributed deployment
 Auto scaling based on CPU load
 Self-healing infrastructure
@@ -60,6 +61,7 @@ Zero downtime
 Fully production-ready design
 
 📈 Future Enhancements
+
 Add RDS Multi-AZ backend
 Implement CI/CD using CodePipeline
 Deploy with Terraform or CloudFormation
